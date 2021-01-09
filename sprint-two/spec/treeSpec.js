@@ -5,10 +5,12 @@ describe('tree', function() {
     tree = Tree();
   });
 
-  it('should have methods named "addChild" and "contains", and a property named "value"', function() {
+  //Improved this test to check for children property
+  it('should have methods named "addChild" and "contains", and a property named "value" and "children"', function() {
     expect(tree.addChild).to.be.a('function');
     expect(tree.contains).to.be.a('function');
     expect(tree.hasOwnProperty('value')).to.equal(true);
+    expect(tree.hasOwnProperty('children')).to.equal(true);
   });
 
   it('should add children to the tree', function() {

@@ -56,4 +56,9 @@ var getIndexBelowMaxForKey = function(str, max) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+
+ For the limited array function, the time complexity of both get and set is O(1) as these functions should not iterate through any value. However, each has a time complexity of O(n) as it has to call the callback function on each vale of the storage array.
+
+ One of the key characterstics of the hashing function is to keep time complexity constant. Though it iterates through the input string, it has a max value that limits the iteration and therefore its time complexity is O(1).
+
  */
